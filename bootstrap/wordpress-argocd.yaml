@@ -7,7 +7,7 @@ spec:
   source:
     repoURL: 'git@github.com:StrikerASD/ArgoCD.git'
     targetRevision: HEAD
-    path: 'bootstrap/wordpress-argocd'
+    path: 'bootstrap'
     helm:
       valueFiles:
         - values.yaml
