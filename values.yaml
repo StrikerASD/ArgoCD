@@ -1,10 +1,10 @@
 wordpressUsername: admin
-wordpressPassword: 
+wordpressPassword: 12box34
 mariadb:
   auth:
-    rootPassword: your-root-password
+    rootPassword: 12root34
     username: bn_wordpress
-    password: your-db-password
+    password: 12box34
     database: bitnami_wordpress
 service:
   type: LoadBalancer
