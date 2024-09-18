@@ -7,7 +7,7 @@ spec:
   source:
     repoURL: 'https://github.com/StrikerASD/ArgoCD.git'
     targetRevision: HEAD
-    path: 'ArgoCD'
+    path: 'bootstrap'
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: argocd
