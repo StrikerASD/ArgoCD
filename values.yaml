@@ -1,0 +1,10 @@
+wordpressUsername: admin
+wordpressPassword: 
+mariadb:
+  auth:
+    rootPassword: your-root-password
+    username: bn_wordpress
+    password: your-db-password
+    database: bitnami_wordpress
+service:
+  type: LoadBalancer
