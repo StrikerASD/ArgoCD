@@ -1023,7 +1023,7 @@ metrics:
   ##
   livenessProbe:
     enabled: true
-    initialDelaySeconds: 15
+    initialDelaySeconds: 30
     periodSeconds: 10
     timeoutSeconds: 5
     failureThreshold: 3
@@ -1037,7 +1037,7 @@ metrics:
   ##
   readinessProbe:
     enabled: true
-    initialDelaySeconds: 5
+    initialDelaySeconds: 15
     periodSeconds: 10
     timeoutSeconds: 3
     failureThreshold: 3
