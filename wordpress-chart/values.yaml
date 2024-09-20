@@ -121,7 +121,7 @@ wordpressPassword: ""
 existingSecret: ""
 ## @param wordpressEmail WordPress user email
 ##
-wordpressEmail: igi31@wp.pl
+wordpressEmail: user@example.com
 ## @param wordpressFirstName WordPress user first name
 ##
 wordpressFirstName: FirstName
@@ -130,7 +130,7 @@ wordpressFirstName: FirstName
 wordpressLastName: LastName
 ## @param wordpressBlogName Blog name
 ##
-wordpressBlogName: Custom blog name GCP rulez!
+wordpressBlogName: User's Blog!
 ## @param wordpressTablePrefix Prefix to use for WordPress database tables
 ##
 wordpressTablePrefix: wp_
@@ -1023,7 +1023,7 @@ metrics:
   ##
   livenessProbe:
     enabled: true
-    initialDelaySeconds: 30
+    initialDelaySeconds: 15
     periodSeconds: 10
     timeoutSeconds: 5
     failureThreshold: 3
@@ -1037,7 +1037,7 @@ metrics:
   ##
   readinessProbe:
     enabled: true
-    initialDelaySeconds: 15
+    initialDelaySeconds: 5
     periodSeconds: 10
     timeoutSeconds: 3
     failureThreshold: 3
