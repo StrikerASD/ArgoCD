@@ -1,23 +1,23 @@
-#apiVersion: argoproj.io/v1alpha1
-#kind: Application
-#metadata:
-#  name: wordpress
-#  namespace: argocd
-#spec:
-#  source:
-#    repoURL: 'https://github.com/StrikerASD/ArgoCD.git'
-#    targetRevision: HEAD
-#    path: 'wordpress-chart'
-#    helm:
-#      valueFiles:
-#        - values.yaml
-#  destination:
-#    server: 'https://kubernetes.default.svc'
-#    namespace: wordpress
-#  project: default
-#  syncPolicy:
-#    automated:
-#      prune: true
-#      selfHeal: true
-#    syncOptions:
-#      - CreateNamespace=true  # Instruct Argo CD to create the namespace
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: wordpress
+  namespace: argocd
+spec:
+  source:
+    repoURL: 'https://github.com/StrikerASD/ArgoCD.git'
+    targetRevision: HEAD
+    path: 'wordpress-chart'
+    helm:
+      valueFiles:
+        - values.yaml
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: wordpress
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true  # Instruct Argo CD to create the namespace
